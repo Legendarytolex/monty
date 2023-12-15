@@ -26,7 +26,7 @@ void f_push(stack_t **head, unsigned int counter)
 	else
 	{ fprintf(stderr, "L%d: usage: push integer\n", counter);
 		fclose(bus.file);
-		free(us.content);
+		free(bus.content);
 		free_stack(*head);
 		exit(EXIT_FAILURE); }
 	n = atoi(bus.arg);
